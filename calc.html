@@ -2,10 +2,37 @@
 <html>
     <head>
         <title>Calculator</title>
+        <link rel="stylesheet" href="calc.css">
     </head>
     <body>
-        <div id = "top">
-        This is just a test if git actually works
-        </div>
+        <div class="calc_area">
+                <div id = "calc_field">
+                    <div id="display_area"></div>
+                    <button value="clear" id="clear_button">C</button>
+
+                </div>
+                <div id = "buttons_area">
+                    <button value="1" class="number num_button">1</button>
+                    <button value="2" class="number num_button">2</button>
+                    <button value="3" class="number num_button">3</button>
+                    <button value="4" class="number num_button">4</button>
+                    <button value="5" class="number num_button">5</button>
+                    <button value="6" class="number num_button">6</button>
+                    <button value="7" class="number num_button">7</button>
+                    <button value="8" class="number num_button">8</button>
+                    <button value="9" class="number num_button">9</button>
+                    <button value="0" class="zero number num_button">0</button>
+                    <button value="." class="period num_button">.</button>
+                    <button value="=" class="equals num_button">=</button>
+                </div>
+                <div id = "operators_area">
+                    <button value="+" class="operator op_button">+</button>
+                    <button value="-" class="operator op_button">-</button>
+                    <button value="*" class="operator op_button">*</button>
+                    <button value="/" class="operator op_button">/</button>
+                </div>
+            </div>
+
+        <script src="calc.js"></script>
     </body>
 </html>
