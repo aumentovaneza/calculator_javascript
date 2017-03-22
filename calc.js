@@ -8,7 +8,7 @@ window.onload = function () {
         zero,
         period,
         operator;
-
+    //display output on div
     outputScreen = document.getElementById("display_area");
 
     var elem = document.querySelectorAll(".number");
@@ -30,7 +30,7 @@ window.onload = function () {
         },false);
 
     }
-
+    //display zero on the display or add to the expression
     document.querySelector(".zero").addEventListener("click",function() {
 
       var zero = this.value;
@@ -47,7 +47,7 @@ window.onload = function () {
         }
 
     },false);
-
+    //display period on the display or add to the expression
     document.querySelector(".period").addEventListener("click",function() {
 
        var period = this.value;
@@ -66,6 +66,7 @@ window.onload = function () {
 
     },false);
 
+    //evaluate expression
 
   document.getElementById("evaluate").addEventListener("click",function() {
 
